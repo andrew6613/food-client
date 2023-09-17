@@ -1,0 +1,37 @@
+.wrapper {
+  width: 100vw;
+  height: 64px;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  gap: 20px;
+}
+
+.navlist {
+  display: flex;
+  font-size: 16px;
+  margin-left: 80px;
+  margin-right: 476px;
+  font-weight: 400;
+  &_ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
