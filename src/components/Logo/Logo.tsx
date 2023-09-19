@@ -14,7 +14,7 @@ const Logo: React.FC<LogoProps> = ({ size }) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_508_1449)">
+        <g clipPath="url(#clip0_508_1449)">
           <path
             d="M17.8585 0.506165C27.5209 0.506165 35.352 8.33833 35.352 18C35.352 27.6628 27.5209 35.4938 17.8585 35.4938C8.19684 35.4938 0.364685 27.6628 0.364685 18C0.364685 8.33833 8.19684 0.506165 17.8585 0.506165Z"
             fill="white"
@@ -41,8 +41,8 @@ const Logo: React.FC<LogoProps> = ({ size }) => {
             y2="33.1986"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B5460F" />
-            <stop offset="1" stop-color="#B5460F" />
+            <stop stopColor="#B5460F" />
+            <stop offset="1" stopColor="#B5460F" />
           </linearGradient>
           <clipPath id="clip0_508_1449">
             <rect width="36" height="36" fill="white" />
