@@ -11,8 +11,8 @@ const Main = () => {
         from <span>weeknight dinners</span> to <span>holiday feasts</span>.
       </div>
       <div className="search">
-        <input placeholder="Enter dishes" />
-        <button>
+        <input className="search_input" placeholder="Enter dishes" />
+        <button className="search__icon">
           <SearchIcon />
         </button>
       </div>
