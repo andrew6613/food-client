@@ -2,6 +2,8 @@ import React from "react";
 import "./Main.scss";
 import SearchIcon from "../SearchIcon/SearchIcon";
 import Multidropdown from "../Multidropdown/Multidropdown";
+import Card from "../Card/Card";
+import RecipesMain from "../RecipesMain/RecipesMain";
 
 const Main = () => {
   return (
@@ -19,6 +21,7 @@ const Main = () => {
       <div className="drop">
         <Multidropdown />
       </div>
+      <RecipesMain />
     </div>
   );
 };
