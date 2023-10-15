@@ -2,28 +2,20 @@ import React from "react";
 import Card from "../Card/Card";
 import styles from "./RecipesMain.module.scss";
 
-const RecipesMain = () => {
-  const [recipesData, setRecipiesData] = React.useState<any[]>([]);
-  React.useEffect(() => {
-    fetch(
-      "https://api.spoonacular.com/recipes/random?number=9&apiKey=ce2cf46efc154fc68fbf49c37c914844"
-    )
-      .then((res) => {
-        return res.json();
-      })
-      .then((arr) => {
-        setRecipiesData(arr.recipes);
-      });
-  }, []);
+interface RecipesMain {
+  data: any[];
+}
+
+const RecipesMain: React.FC<RecipesMain> = ({ data }) => {
   return (
     <div className={styles.main__container}>
-      {recipesData.length > 0 &&
-        recipesData.map((el) => (
+      {data.length > 0 &&
+        data.map((el) => (
           <Card
             key={el.id}
             title={el.title}
             minutes={el.readyInMinutes}
-            calories={Math.ceil(el.pricePerServing)}
+            //calories={Math.ceil(el.nutrition.nutrients[0].amount)}
             imageUrl={el.image}
           />
         ))}
